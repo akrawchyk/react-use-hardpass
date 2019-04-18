@@ -18,7 +18,7 @@ const now = new Date().toUTCString();
 
 const banner = `/*
   @license
-        use-hardpass.js v${pkg.version}
+        react-use-hardpass.js v${pkg.version}
         ${now} - commit ${commitHash}
 
         https://github.com/akrawchyk/react-use-hardpass
@@ -44,7 +44,7 @@ export default  {
   ],
   output: [
     {
-      file: 'dist/use-hardpass.umd.js',
+      file: 'dist/react-use-hardpass.umd.js',
       format: 'umd',
       name: 'use-hardpass',
       sourcemap: true,
@@ -54,7 +54,7 @@ export default  {
       }
     },
     {
-      file: 'dist/use-hardpass.esm.js',
+      file: 'dist/react-use-hardpass.esm.js',
       format: 'esm',
       banner
     }
