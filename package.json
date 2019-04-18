@@ -1,7 +1,7 @@
 {
   "name": "react-use-hardpass",
-  "version": "0.1.0",
-  "description": "React hook for using hardpass",
+  "version": "0.0.0",
+  "description": "React hook for hardpass (https://github.com/akrawchyk/hardpass)",
   "main": "index.js",
   "scripts": {
     "build": "shx rm -rf dist && git rev-parse HEAD > .commithash && rollup -c",
@@ -26,6 +26,7 @@
     "eslint-plugin-react-hooks": "^1.6.0",
     "prettier": "^1.17.0",
     "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "rollup": "^1.10.0",
     "rollup-plugin-alias": "^1.5.1",
     "rollup-plugin-json": "^4.0.0",
@@ -36,7 +37,6 @@
     "typescript": "^3.4.3"
   },
   "dependencies": {
-    "hardpass": "^0.1.0",
-    "react-dom": "^16.8.6"
+    "hardpass": "^0.1.0"
   }
 }
