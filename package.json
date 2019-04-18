@@ -9,6 +9,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "npm run build"
   },
+  "files": [
+    "dist/*.js",
+    "dist/*.map"
+  ],
   "author": "Andrew Krawchyk <akrawchyk@gmail.com> (https://github.com/akrawchyk)",
   "license": "MIT",
   "peerDependencies": {
