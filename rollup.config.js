@@ -31,14 +31,14 @@ const moduleAliases = {
 };
 
 export default  {
-  input: './src/hardpass/index.ts',
+  input: './src/use-hardpass/index.ts',
   plugins: [
     alias(moduleAliases),
     json(),
     typescript()
   ],
   output: [
-    { file: 'dist/hardpass.umd.js', format: 'umd', name: 'use-hardpass', sourcemap: true, banner },
-    { file: 'dist/hardpass.esm.js', format: 'esm', banner }
+    { file: 'dist/use-hardpass.umd.js', format: 'umd', name: 'use-hardpass', sourcemap: true, banner },
+    { file: 'dist/use-hardpass.esm.js', format: 'esm', banner }
   ]
 }

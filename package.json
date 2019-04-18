@@ -4,7 +4,7 @@
   "description": "React hook for using hardpass",
   "main": "index.js",
   "scripts": {
-    "build": "shx rm -rf dist && git rev-parse HEAD > .commithash && rollup -c && shx cp src/hardpass/types.d.ts dist/hardpass.d.ts",
+    "build": "shx rm -rf dist && git rev-parse HEAD > .commithash && rollup -c",
     "fix": "prettier src/**/*.ts test/**/*.ts --write",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "npm run build"
