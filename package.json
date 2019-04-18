@@ -1,6 +1,6 @@
 {
   "name": "react-use-hardpass",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "React hook for hardpass (https://github.com/akrawchyk/hardpass)",
   "main": "dist/react-use-hardpass.umd.js",
   "module": "dist/react-use-hardpass.esm.js",
