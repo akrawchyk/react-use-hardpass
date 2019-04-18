@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { useRef, useState, useEffect } from 'react';
 import hardpass from 'hardpass';
 

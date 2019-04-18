@@ -3,6 +3,7 @@ import path from 'path';
 import alias from 'rollup-plugin-alias';
 import json from 'rollup-plugin-json';
 import typescript from 'rollup-plugin-typescript';
+import resolve from 'rollup-plugin-node-resolve';
 import pkg from './package.json';
 
 const commitHash = (function() {
@@ -33,12 +34,29 @@ const moduleAliases = {
 export default  {
   input: './src/use-hardpass/index.ts',
   plugins: [
+    resolve(),
     alias(moduleAliases),
     json(),
     typescript()
   ],
+  external: [
+    'react'
+  ],
   output: [
-    { file: 'dist/use-hardpass.umd.js', format: 'umd', name: 'use-hardpass', sourcemap: true, banner },
-    { file: 'dist/use-hardpass.esm.js', format: 'esm', banner }
+    {
+      file: 'dist/use-hardpass.umd.js',
+      format: 'umd',
+      name: 'use-hardpass',
+      sourcemap: true,
+      banner,
+      globals: {
+        react: 'React'
+      }
+    },
+    {
+      file: 'dist/use-hardpass.esm.js',
+      format: 'esm',
+      banner
+    }
   ]
 }
