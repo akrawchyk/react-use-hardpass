@@ -1,0 +1,42 @@
+{
+  "name": "react-use-hardpass",
+  "version": "0.1.0",
+  "description": "React hook for using hardpass",
+  "main": "index.js",
+  "scripts": {
+    "build": "shx rm -rf dist && git rev-parse HEAD > .commithash && rollup -c && shx cp src/hardpass/types.d.ts dist/hardpass.d.ts",
+    "fix": "prettier src/**/*.ts test/**/*.ts --write",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run build"
+  },
+  "author": "Andrew Krawchyk <akrawchyk@gmail.com> (https://github.com/akrawchyk)",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "@types/react": "^16.8.13",
+    "@types/react-dom": "^16.8.4",
+    "@typescript-eslint/parser": "^1.6.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-react-hooks": "^1.6.0",
+    "prettier": "^1.17.0",
+    "react": "^16.8.6",
+    "rollup": "^1.10.0",
+    "rollup-plugin-alias": "^1.5.1",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-typescript": "^1.0.1",
+    "shx": "^0.3.2",
+    "ts-node": "^8.1.0",
+    "tslib": "^1.9.3",
+    "typescript": "^3.4.3"
+  },
+  "dependencies": {
+    "hardpass": "^0.1.0",
+    "react-dom": "^16.8.6"
+  }
+}
